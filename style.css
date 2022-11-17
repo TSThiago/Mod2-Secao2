@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+
+.formBox {
+    margin: 5em auto 5em auto;
+    height: 60vh;
+    width: 60vw;
+    background-color: salmon;
+    display: flex;
+    justify-content: center;
+}
+
+.firstFormSection{
+    margin-top: 1em;
+}
+
+.formSection, .firstFormSection{
+    margin-bottom: 1em;
+    
+}
+
+.checkboxSection {
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+}
