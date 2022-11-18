@@ -7,20 +7,22 @@ const closingOutlineColor = document.getElementById('closingTime')
 
 nameOutlineColor.addEventListener('focus', (event) => {
     event.target.style.outlineColor = 'purple';
+    shopName.value = window.localStorage.getItem('Shop Name')
 });
 
 nameOutlineColor.addEventListener('blur', (event) => {
     event.target.style.borderColor = '';
-    console.log("Shop name: " +event.target.value)
+    window.localStorage.setItem("Shop Name" , event.target.value)
 });
 
 addressOutlineColor.addEventListener('focus', (event) => {
     event.target.style.outlineColor = 'purple';
+    shopAddress.value = window.localStorage.getItem("Shop Address")
 });
 
 addressOutlineColor.addEventListener('blur', (event) => {
     event.target.style.borderColor = '';
-    console.log("Shop address: " +event.target.value)
+    window.localStorage.setItem("Shop Address" , event.target.value)
 });
 
 openingOutlineColor.addEventListener('focus', (event) => {
@@ -29,7 +31,7 @@ openingOutlineColor.addEventListener('focus', (event) => {
 
 openingOutlineColor.addEventListener('blur', (event) => {
     event.target.style.borderColor = '';
-    console.log("Opéning time:" +event.target.value)
+    window.localStorage.setItem("Opening time:" , event.target.value)
 });
 
 closingOutlineColor.addEventListener('focus', (event) => {
@@ -38,8 +40,15 @@ closingOutlineColor.addEventListener('focus', (event) => {
 
 closingOutlineColor.addEventListener('blur', (event) => {
     event.target.style.borderColor = '';
-    console.log("Closing time:" +event.target.value)
+    window.localStorage.setItem("Closing time:" ,event.target.value)
 });
+
+// Fill the inputs:
+
+
+function FillInputs(event){
+    
+}
 
 // Button function:
 
