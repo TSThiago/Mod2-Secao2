@@ -6,13 +6,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
     <title>Formulário</title>
 </head>
 
 <body>
     <section class="formBox">
-        <form>
+        <form action="api.flit.com.br/submeterDados" method="get">
             <div class="firstFormSection">
                 <label for="shopName">Nome:</label>
                 <input id="shopName" type="text" name="shop">
@@ -61,10 +60,12 @@
                 <input id="closingTime" type="time" name="closingTime">
             </div>
             <div class="formSection">
-                <input type="submit">
+                <button id="submitButton" type="submit" formmethod="post">Enviar Dados</button> 
             </div>
         </form>
     </section>
 </body>
 
 </html>
+
+<script src="script.js"></script>
