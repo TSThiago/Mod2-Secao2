@@ -7,23 +7,36 @@
 
 .formBox {
     margin: 5em auto 5em auto;
-    height: 60vh;
-    width: 60vw;
+    width: 714px;;
     background-color: salmon;
+}
+
+form {
     display: flex;
-    justify-content: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 
-.firstFormSection{
+.formSection{
     margin-top: 1em;
-}
-
-.formSection, .firstFormSection{
     margin-bottom: 1em;
-    
+    width: 200px;
+    text-align: center;
 }
 
-.checkboxSection {
-    margin-top: 0.5em;
-    margin-bottom: 0.5em;
+
+@media screen and (max-width: 800px){
+    .formBox {
+        width:400px;
+    }
+}
+
+@media screen and (max-width: 400px){
+    form {
+        display:flex;
+        flex-direction: column;
+    }
+    .formBox {
+        width: 200px;
+    }
 }
